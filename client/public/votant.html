@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votant</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/votant.js" defer></script>
+
+    <script src="/js/chart.min.js"></script>
+
+    <link rel="stylesheet" href="/style/votant.css">
+</head>
+<body>
+    <h1>Votant Page</h1>
+    
+    <div id="vote-status">
+        <p id="vote-name">No open votes</p>
+    </div>
+
+    <div id="vote-options" style="display:none;">
+        <button id="pour">Pour</button>
+        <button id="contre">Contre</button>
+        <button id="nppv">NPPV</button>
+        <button id="abstention">Abstention</button>
+    </div>
+
+    <div id="results-section" style="display:none;">
+        <canvas id = "votantChart"></canvas>
+    </div>  
+
+    <p id="vote-result"></p>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

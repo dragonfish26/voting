@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FEFAE0; 
+    color: #606C38; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column; 
+}
+
+/* Main content container */
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    color: #283618; 
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Vote Status Section */
+#vote-status {
+    margin-bottom: 20px;
+}
+
+/* Vote Options Section */
+#vote-options {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#vote-options button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #BC6C25; 
+    background-color: #DDA15E; 
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#vote-options button:hover {
+    background-color: #BC6C25; 
+    border-color: #606C38; 
+}
+
+/* Result Section */
+#results-section {
+    width: 100%;
+    height: 300px;  
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#vote-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Links styling */
+a {
+    color: #BC6C25; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph and general text styling */
+p {
+    margin-top: 10px;
+}
+
+/* Styling for the chart */
+#votantChart {
+    width: 100%;
+    height: 300px;  
+    max-width: 600px;
+    margin: 0 auto;
+}
+

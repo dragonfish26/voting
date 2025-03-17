@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Vote</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/admin-vote.js" defer></script>
+
+    <script src="/js/chart.min.js"></script>
+
+    <link rel="stylesheet" href="/style/admin-vote.css">
+</head>
+<body>
+    <h1>Admin Vote</h1>
+
+    <div id="vote-text-section">
+        <label for="vote-text">Vote Text:</label>
+        <input type="text" id="vote-text" placeholder="Enter vote name" />
+        <button id="start-vote-btn">Start Vote</button>
+    </div>
+
+    <div id="stats-section">
+        <p>Total Voters: <span id="total-voters">0</span></p>
+        <p>Connected Voters: <span id="connected-voters">0</span></p>
+        <p style="display: none;">Votes: <span id="vote-count">0</span></p>
+    </div>
+
+    <div id="results-section" style="display:none;">
+        <canvas id = "adminChart"></canvas>
+    </div>  
+    
+    <div id="info-section">
+        <h3>Information:</h3>
+        <ul id="info-list">
+        </ul>
+    </div>
+
+    <div id="vote-status">
+        <p>Vote: <span id="current-vote-name">No vote started</span></p>
+        <button id="close-vote-btn" style="display: none;">Close Vote</button>
+        <button id="restart-vote" style="display: none;">Restart Vote</button> 
+
+    </div> 
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

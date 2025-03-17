@@ -1,0 +1,16 @@
+/* Keep the basic styles you had before */
+#vote-text-section, 
+#stats-section, 
+#info-section, 
+#vote-status {
+    margin-bottom: 20px;
+}
+
+#results-section {
+    width: 100%;  /* Ensure full width */
+    height: 300px;  /* Set a fixed height for the chart */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
