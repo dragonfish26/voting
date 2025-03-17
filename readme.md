@@ -1,4 +1,4 @@
-### Projet 1 - Vote App
+### Vote App
 
 Ce projet est une application de vote permettant aux administrateurs de gérer les votes et aux votants de participer.
 
